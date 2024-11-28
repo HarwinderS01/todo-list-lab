@@ -1,70 +1,93 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# **ToDo App - Lab Assignment 4**
 
-In the project directory, you can run:
+A simple and functional ToDo list application built using **React Native**. This app demonstrates concepts such as **state lifting**, **event handling**, and **form interaction**, while providing a clean and mobile-friendly UI.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Features**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Add Tasks**: Input tasks via a form and dynamically add them to the task list.
+- **Prevent Empty/Duplicate Tasks**: Ensures that only unique, non-empty tasks are added.
+- **Dynamic Task List**: Displays tasks in a styled list, updated in real-time.
+- **Clear Input Field**: Automatically clears the input field after task submission.
+- **Mobile-Friendly Design**: Improved layout and styles for a better user experience.
+- **Empty List Message**: Displays a helpful message when no tasks are present.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Technologies Used**
 
-### `npm run build`
+- **React Native**: For building the mobile application.
+- **Expo**: For fast development and testing.
+- **JavaScript (ES6+)**: For logic and functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Setup Instructions**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Follow these steps to run the app locally:
 
-### `npm run eject`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/HarwinderS01/Lab4.git
+   cd Lab4
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install Dependencies**:
+   Make sure you have Node.js and npm installed. Then run:
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the Expo Server**:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Run on Mobile or Emulator**:
+   - Open the Expo Go app on your mobile device (available on Android and iOS).
+   - Scan the QR code displayed in the terminal or Expo DevTools.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **File Structure**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+project/
+├── src/
+│   ├── App.jsx        # Main app logic and task list management
+│   ├── ToDoForm.jsx   # Input form for adding tasks
+├── App.js             # Entry point, links to src/App.jsx
+├── index.js           # Registers the app with Expo
+├── app.json           # App configuration
+├── package.json       # Project dependencies
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## **Usage**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Add Tasks**:
+   - Type a task into the input field.
+   - Click the "Add" button to add the task to the list.
+2. **View Tasks**:
+   - All tasks are displayed in a scrollable list.
+   - Each task is styled for clarity and visibility.
+3. **Empty List**:
+   - If there are no tasks, a message ("No tasks yet. Add a new task!") is displayed.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## **Assignment Requirements Fulfilled**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This app meets all the requirements of Lab Assignment 4:
+1. **State Lifting**: Managed task state in `App.jsx` and passed it to `ToDoForm` as a prop.
+2. **Event Handling**: Implemented `onPress` events to trigger the addition of tasks.
+3. **Form Interaction**: Created a functional form using `TextInput` and `Button`.
+4. **Validation**: Prevented adding empty or duplicate tasks.
+5. **Enhanced UI**: Improved styling with a header, shadows, spacing, and an empty list message.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
